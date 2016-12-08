@@ -16,17 +16,32 @@ var opts = {
 };
 
 io.on( 'connection', function( socket ) {
+	
 	socket.on('multiplex-statechanged', function(data) {
+		console.log(data);
 		if (typeof data.secret == 'undefined' || data.secret == null || data.secret === '') return;
-		if (createHash(data.secret) === data.socketId) {
-			data.secret = null;
+		// if (createHash(data.secret) === data.socketId) {
+		// 	data.secret = null;
 			socket.broadcast.emit(data.socketId, data);
-		};
+		//};
 	});
 });
 
 [ 'css', 'js', 'plugin', 'lib' ].forEach(function(dir) {
 	app.use('/' + dir, staticDir(opts.baseDir + dir));
+});
+
+app.get("/master", function(req, res) {
+	res.writeHead(200, {'Content-Type': 'text/html'});
+
+	var stream = fs.createReadStream(opts.baseDir + '/master.html');
+	stream.on('error', function( error ) {
+		res.write('<style>body{font-family: sans-serif;}</style><h2>reveal.js multiplex server.</h2><a href="/token">Generate token</a>');
+		res.end();
+	});
+	stream.on('readable', function() {
+		stream.pipe(res);
+	});
 });
 
 app.get("/", function(req, res) {

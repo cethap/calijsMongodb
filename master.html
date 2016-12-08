@@ -1,0 +1,953 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Javascript</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						|![Alt text](lib/images/js.png)|![Alt text](lib/images/cethap.svg)|
+						| ------------- |:-------------:|
+						## Cesar Augusto Tapasco Arias
+						Research and Development Engineer
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/js.png)
+						## Do Javascript!!
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/do/webapps.png)
+						## Front-End!!
+					</script>	
+				</section>																								
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/do/server.png)
+						## Back-End API!!
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/do/desktop.jpg)
+						## Desktop App!!
+					</script>	
+				</section>												
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/do/automation.jpg)
+						## Automation!!
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/do/fullstack.png)
+						## Full stack javascript
+						**MEAN (Mongo Express Angular Node)!!**
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/do/mobile.png)
+						## Mobile Apps!!
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/do/realtime.jpg)
+						## RealTime Apps!!
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/do/robot.png)
+						## Robots!!
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/js.png)
+						## Javascript
+						**History, standars and concepts** <!-- .element: class="fragment" data-fragment-index="0" -->
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						**History**
+						![Alt text](lib/images/historia/browser-wars.jpg)
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						**Episode I: The Force Awakens**
+						![Alt text](lib/images/historia/mosaic.png)
+					</script>	
+				</section>
+				<section data-markdown data-background-image="lib/images/historia/nmi.png">
+					<script type="text/template">
+						**Episode II: The clone wars**
+						![Alt text](lib/images/historia/nmi.png)
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						**Episode III: The Phantom Menace**
+						![Alt text](lib/images/historia/ivn.jpg)
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						**Episode IV: Return of the Phoenix**
+						![Alt text](lib/images/historia/ffp.png)
+					</script>	
+				</section>
+				<section data-markdown data-background-image="lib/images/historia/webkit-evolucion.png">
+					<script type="text/template">
+						**Episode V: The Empire Strikes Back**
+						![Alt text](lib/images/historia/webkit-evolucion.png)
+					</script>	
+				</section>
+				<section data-markdown data-background-image="lib/images/historia/ac.jpg">
+					<script type="text/template">
+						**Episode VI: Attack of the Chromes**
+						![Alt text](lib/images/historia/ac.jpg)
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/javascript-engines.png)
+						### Javascript Engines
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/conceptos/chakra.png)
+						### Internet explorer 
+						**(Chakra + Trident = IE)** 
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/conceptos/spidermonkey.jpg)
+						### Firefox 
+						**(SpiderMonkey + Gecko = Firefox)**
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/conceptos/v8.png)
+						### Chrome 
+						**(v8 + webkit = Chrome)**
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/conceptos/wk.png)
+					</script>	
+				</section>					
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/conceptos/es.png)
+						### Ecmascript (ES5, ES6, Future ES7)
+						**(Transpilers)**
+					</script>	
+				</section>					
+				<section data-background-image="lib/images/conceptos/babelComparative.png">
+				</section>	
+				<section data-background-image="lib/images/conceptos/typescriptComparative.png">
+				</section>																																								
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/fehcj.png)
+						## Front-End 
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/js.png)
+						## JS Frameworks and Libraries 
+						- Angular 1.x/2 <!-- .element: class="fragment" data-fragment-index="0" -->
+						- Vue <!-- .element: class="fragment" data-fragment-index="1" -->
+						- React <!-- .element: class="fragment" data-fragment-index="2" -->
+						- jQuery <!-- .element: class="fragment" data-fragment-index="3" -->
+					</script>	
+				</section>				
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/frameworks/angular.jpg)
+						### V1.x
+						**https://angularjs.org/**
+						- Data Binding <!-- .element: class="fragment" data-fragment-index="0" -->
+						- Controller <!-- .element: class="fragment" data-fragment-index="1" -->
+						- Plain JavaScript <!-- .element: class="fragment" data-fragment-index="2" -->
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/code_frameworks/angular1.png)
+						### Angular V1.x
+					</script>	
+				</section>					
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/frameworks/angular.jpg)
+						### V2.x
+						**https://angular.io/**
+						- Develop Across All Platforms <!-- .element: class="fragment" data-fragment-index="0" -->
+						- Speed & Performance <!-- .element: class="fragment" data-fragment-index="1" -->
+						- Incredible Tooling <!-- .element: class="fragment" data-fragment-index="2" -->
+						- Loved by Millions <!-- .element: class="fragment" data-fragment-index="3" -->
+						- Typescript required <!-- .element: class="fragment" data-fragment-index="4" -->
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/code_frameworks/angular2.png)
+						### Angular V2
+					</script>	
+				</section>				
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/frameworks/vue.jpg)
+						### V2.x
+						**https://vuejs.org/**
+						- Approachable <!-- .element: class="fragment" data-fragment-index="0" -->
+						- Versatile <!-- .element: class="fragment" data-fragment-index="1" -->
+						- Performant  <!-- .element: class="fragment" data-fragment-index="2" -->
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/code_frameworks/vue.png)
+						### vue
+					</script>	
+				</section>				
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/frameworks/react.png)
+						### V15.x
+						**https://facebook.github.io/react/**
+						- Declarative <!-- .element: class="fragment" data-fragment-index="0" -->
+						- Component-Based <!-- .element: class="fragment" data-fragment-index="1" -->
+						- Learn Once, Write Anywhere  <!-- .element: class="fragment" data-fragment-index="2" -->
+						- Babel (jsx) required <!-- .element: class="fragment" data-fragment-index="3" -->
+					</script>	
+				</section>		
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/code_frameworks/react.png)
+						![Alt text](lib/images/code_frameworks/jsx.png)
+						### react
+					</script>	
+				</section>		
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/frameworks/jquery.png)
+					</script>	
+				</section>						
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/css3.png)
+						## CSS Libraries
+						- Bootstrap 2.x/3 <!-- .element: class="fragment" data-fragment-index="0" -->
+						- Material Design <!-- .element: class="fragment" data-fragment-index="1" -->
+						- Foundation <!-- .element: class="fragment" data-fragment-index="2" -->
+						- Fabric <!-- .element: class="fragment" data-fragment-index="3" -->
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/frameworks/Foundation-Bootstrap.png)
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/frameworks/materialdesign.png)
+						## google
+						**Material Design**
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/frameworks/office-ui-fabric.png)
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/conceptos/html5API.png)
+					</script>	
+				</section>	
+				<section data-markdown class="xs1Image">
+					<script type="text/template">
+						![Alt text](lib/images/html5API/HTML5_Semantics_512.png)
+						## SEMANTICS
+						- Sections and outlines in HTML5
+						- Using HTML5 audio and video
+						- Forms in HTML5
+						- New semantic elements
+						- MathML
+					</script>	
+				</section>
+				<section data-markdown class="xs1Image">
+					<script type="text/template">
+						![Alt text](lib/images/html5API/HTML5_Performance_512.png)
+						## PERFORMANCE AND INTEGRATION
+						- Web Workers
+						- XMLHttpRequest level 2
+						- JIT-compiling JavaScript engines
+						- History API
+						- Drag and drop
+					</script>	
+				</section>
+				<section data-markdown class="xs1Image">
+					<script type="text/template">
+						![Alt text](lib/images/html5API/HTML5_Performance_512.png)
+						## PERFORMANCE AND INTEGRATION
+						- Focus management in HTML
+						- Web-based protocol handlers
+						- requestAnimationFrame
+						- Fullscreen API
+						- Pointer Lock API
+						- Online and offline events
+					</script>	
+				</section>
+				<section data-markdown class="xs1Image">
+					<script type="text/template">
+						![Alt text](lib/images/html5API/HTML5_Connectivity_512.png)
+						## CONNECTIVITY
+						- Web Sockets
+						- Server-sent events
+						- WebRTC
+					</script>	
+				</section>
+				<section data-markdown class="xs1Image">
+					<script type="text/template">
+						![Alt text](lib/images/html5API/HTML5_Semantics_512.png)
+						## DEVICE ACCESS
+						- Using the Camera API
+						- Touch events
+						- Using geolocation
+						- Detecting device orientation
+						- Pointer Lock API
+					</script>	
+				</section>
+				<section data-markdown class="xs1Image">
+					<script type="text/template">
+						![Alt text](lib/images/html5API/HTML5_Offline_Storage_512.png)
+						## OFFLINE & STORAGE
+						- Offline resources: The application cache
+						- Online and offline events
+						- WHATWG client-side session and persistent storage (aka DOM storage)
+						- IndexedDB
+						- Using files from web applications
+					</script>	
+				</section>
+				<section data-markdown class="xs1Image">
+					<script type="text/template">
+						![Alt text](lib/images/html5API/HTML5_Styling_512.png)
+						## STYLING
+						- New background styling features
+						- More fancy borders
+						- Animating your style
+						- Typography improvement
+						- New presentational layouts
+					</script>	
+				</section>
+				<section data-markdown class="xs1Image">
+					<script type="text/template">
+						![Alt text](lib/images/html5API/HTML5_Multimedia_512.png)
+						## MULTIMEDIA
+						- Using HTML5 audio and video
+						- WebRTC
+						- Using the Camera API
+						- Track and WebVTT
+					</script>	
+				</section>
+				<section data-markdown class="xs1Image">
+					<script type="text/template">
+						![Alt text](lib/images/html5API/HTML5_3D_Effects_512.png)
+						## 3D GRAPHICS AND EFFECTS
+						- Canvas tutorial
+						- HTML5 Text API for canvas elements
+						- WebGL
+						- SVG
+					</script>	
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/server/best_practice.jpg)
+					</script>	
+				</section>	
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						// Declare and initiate at the beginning
+						var firstName = "",
+							lastName = "",
+							price = 0,
+							discount = 0,
+							fullPrice = 0,
+							myArray = [],
+							myObject = {};
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						var MyNamespace = MyNamespace || {};
+
+						MyNamespace.MyModule = function()
+						{
+							// Your module is now in a namespace!
+						}
+						```               
+					</script>	
+				</section>	
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						// An anonymous function that can never be referenced by name...
+						(function(){
+							var x = 123;
+							console.log(x);
+						})(); // Call the anonymous function once, then throw it away!
+
+						console.log(x);						
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						//Don't use !eval()
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						//Difference == and ===
+						3 == "3" //true
+						3 == 3 //true
+						3 === "3" //false
+						3 === 3 //true						
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						//bad
+						for(var i = 0; i < someArray.length; i++) {
+							var container = document.getElementById('container');
+							container.innerHtml += 'my number: ' + i;
+							console.log(i);
+						}						
+						//good
+						var container = document.getElementById('container');
+						for(var i = 0, len = someArray.length; i < len;  i++) {
+							container.innerHtml += 'my number: ' + i;
+							console.log(i);
+						}						
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						// {} Better new Object();
+						// [] Better new Array(); 						
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						//Self-Executing Functions
+						(function doSomething() {
+						return {
+							name: 'jeff',
+							lastName: 'way'
+						};
+						})();						
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						//Before
+						if(v){
+							var x = v;
+						} else {
+							var x =10;
+						}
+						//After
+						var x = v || 10;						
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						//Before
+						var direction;
+						if(x > 100){
+							direction = 1;
+						} else {
+							direction = -1;
+						}
+						//After
+						var direction = (x > 100) ? 1 : -1;
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						// bad
+						function foo(bar,
+									baz,
+									quux) {
+							// body
+						}
+
+						// good
+						function foo(
+							bar,
+							baz,
+							quux,
+						) {
+							// body
+						}						
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						// bad
+						console.log(foo,
+						bar,
+						baz);
+
+						// good
+						console.log(
+							foo,
+							bar,
+							baz,
+						);						
+						```               
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						// Before
+						var Jedi = function(){};
+							Jedi.prototype.jump = function () {
+							this.jumping = true;
+							return true;
+						};
+
+						Jedi.prototype.setHeight = function (height) {
+							this.height = height;
+						};
+
+						const luke = new Jedi();
+						luke.jump(); // => true
+						luke.setHeight(20); // => undefined
+						```               
+					</script>	
+				</section>							
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						// After
+						class Jedi {
+							jump() {
+								this.jumping = true;
+								return this;
+							}
+							setHeight(height) {
+								this.height = height;
+								return this;
+							}
+						}
+
+						const luke = new Jedi();
+
+						luke.jump()
+						.setHeight(20);						
+						```               
+					</script>	
+				</section>	
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						// bad
+						if (isValid === true) {}
+						// good
+						if (isValid) {}
+
+						// bad
+						if (name) {}
+						// good
+						if (name !== '') {}
+
+						// bad
+						if (collection.length) {}
+						// good
+						if (collection.length > 0) {}						
+						```               
+					</script>	
+				</section>	
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						```javascript
+						// bad
+						const foo = a ? a : b;
+						const bar = c ? true : false;
+						const baz = c ? false : true;
+
+						// good
+						const foo = a || b;
+						const bar = !!c;
+						const baz = !c;						
+						```               
+					</script>	
+				</section>						
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/server/nodejs_logo.jpg)
+						## Back-End!!
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						![Alt text](lib/images/server/nodejs_logo.jpg)
+						### javascript in server
+						- Threading
+						- V8
+						- Package management
+						- Unified API
+						- Event loop
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						![Alt text](lib/images/server/needle-thread-bw.jpg)
+						### Threading
+						- Node.js operates on a single thread, using non-blocking I/O calls, allowing it to support tens of thousands of concurrent connections without incurring the cost of thread context switching.
+					</script>	
+				</section>				
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						![Alt text](lib/images/conceptos/v8.png)
+						### v8
+						- V8 is the JavaScript execution engine built for Google Chrome and open-sourced by Google in 2008. Written in C++, V8 compiles JavaScript source code to native machine code instead of interpreting it in real time.
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						![Alt text](lib/images/server/url.png)
+						### Package management
+						- npm is the pre-installed package manager for the Node.js server platform. It is used to install Node.js programs from the npm registry, organizing the installation and management of third-party Node.js programs.
+					</script>	
+				</section>
+				<section data-markdown class="xl2Image">
+					<script type="text/template">
+					### some commands
+					```bash
+					#install packages
+					$ npm install
+					$ npm i
+					#init project
+					$ npm init
+					#start project
+					$ npm start
+					#upgrade npm
+					$ npm install -g npm
+					```
+					</script>					
+				</section>					
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						![Alt text](lib/images/server/Unified.jpg)
+						### Unified API
+						- Node.js can be combined with a browser, a database supporting JSON data (such as Postgres,[67] MongoDB or CouchDB) and JSON for a unified JavaScript development stack.
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						![Alt text](lib/images/server/evloop.png)
+						### Event loop
+						- Node.js registers itself with the operating system so that it is notified when a connection is made, and the operating system will issue a callback. Within the Node.js runtime, each connection is a small heap allocation. 
+					</script>	
+				</section>		
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						![Alt text](lib/images/do/fullstack.png)
+						### Frameworks y FullStacks
+					</script>	
+				</section>
+				<section data-markdown class="xs2Image">
+					<script type="text/template">
+						![Alt text](lib/images/server/mean-stack-2-638.jpg)
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/server/logo-mongodb.png)
+					</script>	
+				</section>	
+				<section data-markdown class="xl2Image">
+					<script type="text/template">
+						```json
+						{
+							"_id": ObjectId("4efa8d2b7d284dad101e4bc7"),
+							"Last Name": "PELLERIN",
+							"First Name": "Franck",
+							"Age": 29,
+							"Address": {
+								"Street": "1 chemin des Loges",
+								"City": "VERSAILLES"
+							}
+						}	
+						```   
+					</script>	
+				</section>								
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/server/mvs.jpg)
+					</script>	
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/server/express.png)
+					</script>	
+				</section>	
+				<section data-markdown class="xl2Image">
+					<script type="text/template">
+						```javascript
+						var express = require('express');
+						var app = express();
+
+						// respond with "hello world" when a GET request is made to the homepage
+							app.get('/', function(req, res) {
+							res.send('hello world');
+						});
+						// POST method route
+						app.post('/', function (req, res) {
+							res.send('POST request to the homepage');
+						});
+						// butterfly or dragonfly or any with fly
+							app.get(/.*fly$/, function(req, res) {
+							res.send('/.*fly$/');
+						});			
+						app.use('/user/:id', function (req, res, next) {
+							console.log('Request Type:', req.method);
+							next();
+						});
+								
+						app.listen(3000);	
+						```   
+					</script>					
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/server/passport.png)
+						- OAuth
+						- Strategies
+						- Sessions
+						- Middleware
+						- Authenticate Requests
+					</script>	
+				</section>	
+				<section data-markdown class="xl2Image">
+					<script type="text/template">
+					### Strategies
+					```javascript
+					passport.use(new LocalStrategy(
+						function(username, password, done) {
+							User.findOne({ username: username }, function (err, user) {
+							if (err) { return done(err); }
+							if (!user) { return done(null, false); }
+							if (!user.verifyPassword(password)) { return done(null, false); }
+							return done(null, user);
+							});
+						}
+					));
+					```   
+					</script>					
+				</section>
+				<section data-markdown class="xl2Image">
+					<script type="text/template">
+					### Sessions
+					```javascript
+					passport.serializeUser(function(user, done) {
+						done(null, user.id);
+					});
+
+					passport.deserializeUser(function(id, done) {
+						User.findById(id, function (err, user) {
+							done(err, user);
+						});
+					});
+					```   
+					</script>					
+				</section>
+				<section data-markdown class="xl2Image">
+					<script type="text/template">
+					### Middleware
+					```javascript
+					var app = express();
+					app.use(require('serve-static')(__dirname + '/../../public'));
+					app.use(require('cookie-parser')());
+					app.use(require('body-parser').urlencoded({ extended: true }));
+					app.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
+					app.use(passport.initialize());
+					app.use(passport.session());
+					```   
+					</script>					
+				</section>
+				<section data-markdown class="xl2Image">
+					<script type="text/template">
+					### Authenticate Requests
+					```javascript
+					app.post('/login', 
+					passport.authenticate('local', { failureRedirect: '/login' }),
+					function(req, res) {
+						res.redirect('/');
+					});
+					```   
+					</script>					
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/server/sio.png)
+						- Real-time analytics
+						- Instant messaging and chat
+						- Binary streaming
+						- Document collaboration
+					</script>	
+				</section>
+				<section data-markdown class="xl2Image">
+					<script type="text/template">
+					### server implement
+					```javascript
+					var app = require('http').createServer(handler)
+					var io = require('socket.io')(app);
+					var fs = require('fs');
+
+					app.listen(80);
+
+					function handler (req, res) {
+					fs.readFile(__dirname + '/index.html',
+						function (err, data) {
+							if (err) {
+							res.writeHead(500);
+							return res.end('Error loading index.html');
+							}
+
+							res.writeHead(200);
+							res.end(data);
+						});
+					}
+
+					io.on('connection', function (socket) {
+						socket.emit('news', { hello: 'world' });
+						socket.on('my other event', function (data) {
+							console.log(data);
+						});
+					});
+					```
+					</script>					
+				</section>	
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/server/deepstream.png)
+						### deepstream.io
+						- data-sync
+						- publish-subscribe
+						- request-response
+					</script>	
+				</section>		
+				<section data-markdown class="xl2Image">
+					<script type="text/template">
+						### Data Architecture
+						![Alt text](lib/images/server/internal-workings.svg)
+					</script>					
+				</section>					
+				<section data-markdown>
+					<script type="text/template">
+						![Alt text](lib/images/server/pm2.png)
+						### pm2
+						- Behavior configuration
+						- Watch & Reload
+						- Log management
+						- Monitoring
+						- Cluster Mode
+						- Startup Scripts
+					</script>	
+				</section>
+				<section data-markdown class="xl2Image">
+					<script type="text/template">
+					### install
+					```bash
+					$ npm install pm2 -g
+					```
+					</script>					
+				</section>				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				multiplex: {
+					id: 'a39257f035b9c15c',
+					secret: '14795051191327660314',
+					url: location.host
+				},
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'js/socket.io-1.3.5.js', async: true },
+					{ src: 'plugin/multiplex/master.js', async: true },				
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
